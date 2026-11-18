@@ -1,0 +1,97 @@
+.app-container {
+  height: 100svh;
+  max-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-alabaster);
+  color: var(--text-primary);
+  overflow: hidden;
+}
+
+.app-header {
+  height: 54px;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  border-bottom: 1px solid var(--border-subtle);
+  background-color: var(--white-pure);
+  box-shadow: var(--shadow-subtle);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: var(--white-ghost);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-icon {
+  color: var(--text-primary);
+}
+
+.brand-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.track-counter {
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-secondary);
+  background-color: var(--white-ghost);
+  border: 1px solid var(--border-subtle);
+  padding: 3px 10px;
+  border-radius: 9999px;
+  font-weight: 500;
+}
+
+.main-layout {
+  flex: 1;
+  display: flex;
+  height: calc(100svh - 54px);
+  max-height: calc(100svh - 54px);
+  overflow: hidden;
+}
+
+/* Left 30%: Music Player */
+.player-pane {
+  flex: 0 0 30%;
+  width: 30%;
+  min-width: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 20px;
+  background-color: var(--white-snow);
+  overflow-y: auto;
+}
+
+.pane-divider {
+  width: 1px;
+  background: linear-gradient(180deg, var(--border-subtle) 0%, var(--border-default) 50%, var(--border-subtle) 100%);
+}
+
+/* Right 70%: Circular Linked List with Horizontal Scroll */
+.preview-pane {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px 20px;
+  background-color: var(--white-alabaster);
+  overflow: hidden;
+}
